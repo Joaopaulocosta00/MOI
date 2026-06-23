@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 180" width="460" height="180">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CD9745"/>
+      <stop offset="50%" stop-color="#f5efe6"/>
+      <stop offset="100%" stop-color="#A4673C"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <text
+    x="50%"
+    y="50%"
+    dominant-baseline="middle"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="110"
+    font-style="italic"
+    font-weight="bold"
+    fill="url(#g1)"
+    filter="url(#glow)"
+    letter-spacing="-4"
+  >Môi</text>
+</svg>

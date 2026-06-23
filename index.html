@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Môi — A boate mais exclusiva de Goiânia. Drinks premium, shows de DJ, gastronomia e experiências únicas. Reserve sua mesa agora. +18." />
+  <meta name="keywords" content="boate Goiânia, Môi, nightclub, DJ, shows, reserva de mesa, festas, St. Bueno" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Môi — Nightclub | Goiânia" />
+  <meta property="og:description" content="Viva uma experiência única. Drinks, shows e momentos inesquecíveis no coração de Goiânia." />
+  <meta property="og:type" content="website" />
+  <title>Môi — Nightclub | Goiânia</title>
+  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       MOBILE NAV OVERLAY
+  ═══════════════════════════════════════════════ -->
+  <nav id="nav-mobile-overlay" class="nav-mobile-overlay" role="dialog" aria-label="Menu mobile">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#oferta">O Que Oferecemos</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#reservas">Reservas</a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <a href="#inicio" aria-label="Môi — Página inicial">
+      <img src="assets/logo/logo-nova.png" alt="Logo Môi Nightclub" class="nav-logo" />
+    </a>
+
+    <nav class="nav-links" role="navigation" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#oferta">O Que Oferecemos</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#reservas" class="nav-cta">Reservar Mesa</a>
+    </nav>
+
+    <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════ -->
+    <section id="inicio" aria-label="Hero Môi Nightclub">
+
+      <!-- Canvas de partículas -->
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+      <!-- Imagens flutuantes em paralax (Infinite Marquee) -->
+      <div class="floating-images" aria-hidden="true">
+        <!-- Coluna 1 (Longe/Devagar) -->
+        <div class="marquee-column col-1">
+          <div class="marquee-track track-up slow">
+            <div class="float-card"><img src="assets/hero/club.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/dj.png" alt=""/></div>
+            <div class="float-card"><img src="assets/gallery/gallery-2.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/club.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/dj.png" alt=""/></div>
+            <div class="float-card"><img src="assets/gallery/gallery-2.png" alt=""/></div>
+          </div>
+        </div>
+
+        <!-- Coluna 2 (Perto/Rápido) -->
+        <div class="marquee-column col-2">
+          <div class="marquee-track track-down fast">
+            <div class="float-card"><img src="assets/hero/drink.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/crowd.png" alt=""/></div>
+            <div class="float-card"><img src="assets/gallery/gallery-5.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/drink.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/crowd.png" alt=""/></div>
+            <div class="float-card"><img src="assets/gallery/gallery-5.png" alt=""/></div>
+          </div>
+        </div>
+
+        <!-- Coluna 3 (Média) -->
+        <div class="marquee-column col-3">
+          <div class="marquee-track track-up medium">
+            <div class="float-card"><img src="assets/gallery/gallery-10.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/club.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/dj.png" alt=""/></div>
+            <div class="float-card"><img src="assets/gallery/gallery-10.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/club.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/dj.png" alt=""/></div>
+          </div>
+        </div>
+
+        <!-- Coluna 4 (Longe/Devagar) -->
+        <div class="marquee-column col-4">
+          <div class="marquee-track track-down slow">
+            <div class="float-card"><img src="assets/hero/crowd.png" alt=""/></div>
+            <div class="float-card"><img src="assets/gallery/gallery-8.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/drink.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/crowd.png" alt=""/></div>
+            <div class="float-card"><img src="assets/gallery/gallery-8.png" alt=""/></div>
+            <div class="float-card"><img src="assets/hero/drink.png" alt=""/></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vinheta de profundidade -->
+      <div class="hero-vignette" aria-hidden="true"></div>
+
+      <!-- Conteúdo central fixo -->
+      <div class="hero-content">
+        <span class="hero-badge">✦ Goiânia · St. Bueno · +18</span>
+
+        <img
+          src="assets/logo/logo-nova.png"
+          alt="Môi Nightclub"
+          class="hero-logo"
+        />
+
+        <p class="hero-tagline">Onde a noite ganha vida</p>
+        <div class="hero-divider" aria-hidden="true"></div>
+
+        <div class="hero-ctas">
+          <a href="#reservas" class="btn-primary" id="hero-cta-reservar">
+            🥃 Reservar Mesa
+          </a>
+          <a href="#eventos" class="btn-outline" id="hero-cta-eventos">
+            🎵 Ver Eventos
+          </a>
+        </div>
+
+        <!-- Indicador de scroll (agora no fluxo da página para não sobrepor) -->
+        <div class="scroll-hint" aria-hidden="true">Rolar</div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SOBRE
+    ═══════════════════════════════════════════════ -->
+    <section id="sobre" aria-labelledby="sobre-titulo">
+      <div class="section-inner">
+        <div class="sobre-grid">
+
+          <!-- Imagem -->
+          <div class="sobre-img-wrap reveal-left">
+            <div class="sobre-corner-accent" aria-hidden="true"></div>
+            <img
+              src="assets/gallery/gallery-1.png"
+              alt="Interior exclusivo da Môi"
+              class="sobre-img-main"
+            />
+            <div class="sobre-img-badge" aria-label="4 anos de história">
+              <span class="badge-num">4</span>
+              <span class="badge-text">Anos de história</span>
+            </div>
+          </div>
+
+          <!-- Texto -->
+          <div class="sobre-text reveal-right">
+            <span class="section-label">Nossa história</span>
+            <h1 id="sobre-titulo" class="section-title">
+              Uma nova forma<br />de <span>sentir</span> a noite
+            </h1>
+            <div class="gold-line" aria-hidden="true"></div>
+
+            <p class="section-desc">
+              Há 4 anos, a <strong>Môi</strong> nasceu com um propósito: criar experiências
+              que ficam na memória. Mais do que uma boate, somos um espaço onde
+              música, gastronomia e arte se encontram em cada detalhe.
+            </p>
+            <br />
+            <p class="section-desc">
+              Do design exclusivo dos nossos ambientes à cuidadosa seleção de
+              drinks e DJs internacionais — cada visita à Môi é uma jornada sensorial
+              pensada para você. Porque aqui, a noite começa onde a rotina termina.
+            </p>
+
+            <!-- Estatísticas animadas -->
+            <div class="sobre-stats" role="list" aria-label="Números da Môi">
+              <div class="stat-card reveal delay-1" role="listitem">
+                <div class="stat-num" data-target="4" data-suffix="+" aria-label="4 anos de experiência">4+</div>
+                <div class="stat-label">Anos de Experiência</div>
+              </div>
+              <div class="stat-card reveal delay-2" role="listitem">
+                <div class="stat-num" data-target="500" data-suffix="+" aria-label="mais de 500 eventos realizados">500+</div>
+                <div class="stat-label">Eventos Realizados</div>
+              </div>
+              <div class="stat-card reveal delay-3" role="listitem">
+                <div class="stat-num" data-target="120" data-suffix="+" aria-label="mais de 120 DJs e artistas">120+</div>
+                <div class="stat-label">DJs & Artistas</div>
+              </div>
+              <div class="stat-card reveal delay-4" role="listitem">
+                <div class="stat-num" data-target="50" data-suffix="k+" aria-label="mais de 50 mil pessoas atendidas">50k+</div>
+                <div class="stat-label">Pessoas Atendidas</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         O QUE OFERECEMOS
+    ═══════════════════════════════════════════════ -->
+    <section id="oferta" aria-labelledby="oferta-titulo">
+      <div class="section-inner">
+
+        <div class="text-center reveal">
+          <span class="section-label">Nossa Oferta</span>
+          <h2 id="oferta-titulo" class="section-title">
+            Tudo que você<br />precisa para uma <span>noite perfeita</span>
+          </h2>
+          <div class="gold-line" style="margin: 1rem auto 0;" aria-hidden="true"></div>
+        </div>
+
+        <div class="oferta-grid" role="list">
+
+          <article class="oferta-card reveal delay-1" role="listitem" id="oferta-drinks">
+            <span class="oferta-icon" aria-hidden="true">🥃</span>
+            <h3 class="oferta-title">Drinks & Bar</h3>
+            <p class="oferta-desc">
+              Coquetéis exclusivos criados pelos nossos bartenders premiados,
+              rótulos selecionados e experiências únicas para o seu paladar.
+            </p>
+          </article>
+
+          <article class="oferta-card reveal delay-2" role="listitem" id="oferta-gastronomia">
+            <span class="oferta-icon" aria-hidden="true">🍽️</span>
+            <h3 class="oferta-title">Gastronomia</h3>
+            <p class="oferta-desc">
+              Petiscos gourmet e pratos especiais elaborados para acompanhar
+              perfeitamente sua noite. Sabor e sofisticação em cada detalhe.
+            </p>
+          </article>
+
+          <article class="oferta-card reveal delay-3" role="listitem" id="oferta-shows">
+            <span class="oferta-icon" aria-hidden="true">🎵</span>
+            <h3 class="oferta-title">Shows & DJs</h3>
+            <p class="oferta-desc">
+              Atrações nacionais e internacionais toda semana. Sets ao vivo,
+              performances únicas e uma programação que nunca para de surpreender.
+            </p>
+          </article>
+
+          <article class="oferta-card reveal delay-4" role="listitem" id="oferta-exclusivos">
+            <span class="oferta-icon" aria-hidden="true">💎</span>
+            <h3 class="oferta-title">Produtos Exclusivos</h3>
+            <p class="oferta-desc">
+              Merchandise da Môi, combos especiais e experiências VIP disponíveis
+              apenas para nossos convidados. Leve um pedaço da Môi com você.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         EVENTOS
+    ═══════════════════════════════════════════════ -->
+    <section id="eventos" aria-labelledby="eventos-titulo">
+      <div class="section-inner">
+
+        <div class="eventos-header">
+          <div class="reveal">
+            <span class="section-label">Programação</span>
+            <h2 id="eventos-titulo" class="section-title">
+              Próximos <span>Eventos</span>
+            </h2>
+            <div class="gold-line" aria-hidden="true"></div>
+          </div>
+          <a href="#reservas" class="btn-outline reveal" id="eventos-ver-todos">
+            Ver agenda completa →
+          </a>
+        </div>
+
+        <div class="eventos-grid" role="list">
+
+          <!-- Evento 1 -->
+          <article class="evento-card reveal delay-1" role="listitem" id="evento-1" tabindex="0" aria-label="Evento: MÔII NIGHTS com DJ Marquinhos — 07 Junho">
+            <img src="assets/events/show1.png" alt="Show DJ Marquinhos na Môi" loading="lazy" />
+            <div class="evento-overlay">
+              <span class="evento-date">📅 Sáb, 07 Jun 2025</span>
+              <h3 class="evento-title">MÔII<br />NIGHTS</h3>
+              <p class="evento-info">🎧 DJ Marquinhos · Sets ao vivo · 23h às 05h</p>
+              <a href="#reservas" class="evento-tag" aria-label="Reservar para o evento MÔII NIGHTS">Reservar →</a>
+            </div>
+          </article>
+
+          <!-- Evento 2 -->
+          <article class="evento-card reveal delay-2" role="listitem" id="evento-2" tabindex="0" aria-label="Evento: GOLDEN HOUR com Convidados Especiais — 14 Junho">
+            <img src="assets/hero/dj.png" alt="Golden Hour — evento especial na Môi" loading="lazy" />
+            <div class="evento-overlay">
+              <span class="evento-date">📅 Sáb, 14 Jun 2025</span>
+              <h3 class="evento-title">GOLDEN<br />HOUR</h3>
+              <p class="evento-info">🎧 Line-up especial · Open Bar VIP · 22h às 05h</p>
+              <a href="#reservas" class="evento-tag" aria-label="Reservar para o evento Golden Hour">Reservar →</a>
+            </div>
+          </article>
+
+          <!-- Evento 3 -->
+          <article class="evento-card reveal delay-3" role="listitem" id="evento-3" tabindex="0" aria-label="Evento: NOITE ÍNTIMA — 21 Junho">
+            <img src="assets/gallery/crowd.png" alt="Noite Íntima — experiência exclusiva na Môi" loading="lazy" />
+            <div class="evento-overlay">
+              <span class="evento-date">📅 Sáb, 21 Jun 2025</span>
+              <h3 class="evento-title">NOITE<br />ÍNTIMA</h3>
+              <p class="evento-info">🎷 Acústico ao vivo · Jantar especial · 21h às 03h</p>
+              <a href="#reservas" class="evento-tag" aria-label="Reservar para o evento Noite Íntima">Reservar →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         CARDÁPIO
+    ═══════════════════════════════════════════════ -->
+    <section id="cardapio" aria-labelledby="cardapio-titulo">
+      <div class="section-inner">
+
+        <div class="reveal" style="text-align:left">
+          <span class="section-label">Cardápio</span>
+          <h2 id="cardapio-titulo" class="section-title">
+            Sabor que<br /><span>completa</span> a experiência
+          </h2>
+          <div class="gold-line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="menu-tabs reveal" role="tablist" aria-label="Categorias do cardápio">
+          <button class="menu-tab active" data-tab="drinks" id="tab-drinks" role="tab" aria-selected="true" aria-controls="panel-drinks">Drinks</button>
+          <button class="menu-tab" data-tab="petiscos" id="tab-petiscos" role="tab" aria-selected="false" aria-controls="panel-petiscos">Petiscos</button>
+          <button class="menu-tab" data-tab="especiais" id="tab-especiais" role="tab" aria-selected="false" aria-controls="panel-especiais">Especiais da Casa</button>
+          <button class="menu-tab" data-tab="naoalcoolicos" id="tab-nao" role="tab" aria-selected="false" aria-controls="panel-naoalcoolicos">Sem Álcool</button>
+        </div>
+
+        <!-- Panel: Drinks -->
+        <div class="menu-panel active" id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks">
+          <div class="menu-panel-inner">
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Môi Signature</p>
+                  <p class="menu-item-desc">Cachaça artesanal, mel, limão siciliano, gengibre e espuma de baunilha</p>
+                </div>
+                <span class="menu-item-price">R$ 38</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Golden Sour</p>
+                  <p class="menu-item-desc">Bourbon, suco de maracujá, limão, clara de ovo, bitter de angostura</p>
+                </div>
+                <span class="menu-item-price">R$ 42</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Smoky Negroni</p>
+                  <p class="menu-item-desc">Gin defumado, vermute rosso, campari, raspas de laranja</p>
+                </div>
+                <span class="menu-item-price">R$ 45</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Amber Mule</p>
+                  <p class="menu-item-desc">Vodka premium, ginger beer artesanal, menta fresca, lime</p>
+                </div>
+                <span class="menu-item-price">R$ 36</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Old Fashioned Môi</p>
+                  <p class="menu-item-desc">Whisky 12 anos, açúcar demerara, bitter aromático, laranja cristalizada</p>
+                </div>
+                <span class="menu-item-price">R$ 52</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Tequila Sunrise Gold</p>
+                  <p class="menu-item-desc">Tequila blanco, suco de laranja, grenadine artesanal, sal de ouro</p>
+                </div>
+                <span class="menu-item-price">R$ 40</span>
+              </div>
+            </div>
+            <div class="menu-img-wrap reveal-right">
+              <img src="assets/menu/drinks-flat.png" alt="Seleção de drinks premium da Môi" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Petiscos -->
+        <div class="menu-panel" id="panel-petiscos" role="tabpanel" aria-labelledby="tab-petiscos">
+          <div class="menu-panel-inner">
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Tábua Môi Premium</p>
+                  <p class="menu-item-desc">Frios importados, queijos artesanais, frutas secas, geleias e bruschettas</p>
+                </div>
+                <span class="menu-item-price">R$ 95</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Bruschetta Trufada</p>
+                  <p class="menu-item-desc">Pão artesanal, creme de trufas negras, parmesão laminado, rúcula</p>
+                </div>
+                <span class="menu-item-price">R$ 52</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Camarão ao Alho</p>
+                  <p class="menu-item-desc">Camarões salteados com manteiga de ervas, alho confitado e limão siciliano</p>
+                </div>
+                <span class="menu-item-price">R$ 78</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Mini Sliders da Casa</p>
+                  <p class="menu-item-desc">4 unidades · blend de short rib, queijo gruyère, picles artesanal</p>
+                </div>
+                <span class="menu-item-price">R$ 64</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Chips de Batata Roxa</p>
+                  <p class="menu-item-desc">Batatas fritas artesanais com aioli de açafrão e páprica defumada</p>
+                </div>
+                <span class="menu-item-price">R$ 32</span>
+              </div>
+            </div>
+            <div class="menu-img-wrap reveal-right">
+              <img src="assets/menu/food.png" alt="Petiscos gourmet da Môi" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Especiais da Casa -->
+        <div class="menu-panel" id="panel-especiais" role="tabpanel" aria-labelledby="tab-especiais">
+          <div class="menu-panel-inner">
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Combo VIP Môi</p>
+                  <p class="menu-item-desc">1 garrafa premium + 4 drinks signature + tábua especial para 4 pessoas</p>
+                </div>
+                <span class="menu-item-price">R$ 380</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Golden Package</p>
+                  <p class="menu-item-desc">Mesa reservada + open bar por 2h + petiscos selecionados (até 6 pessoas)</p>
+                </div>
+                <span class="menu-item-price">R$ 650</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Champagne Experience</p>
+                  <p class="menu-item-desc">Garrafa de espumante premium + frutas frescas + serviço especial</p>
+                </div>
+                <span class="menu-item-price">R$ 220</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Aniversário Môi</p>
+                  <p class="menu-item-desc">Decoração, bolo especial, garrafa + brinde surpresa para o aniversariante</p>
+                </div>
+                <span class="menu-item-price">Consulte</span>
+              </div>
+            </div>
+            <div class="menu-img-wrap reveal-right">
+              <img src="assets/gallery/bar.png" alt="Bar exclusivo da Môi" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Sem Álcool -->
+        <div class="menu-panel" id="panel-naoalcoolicos" role="tabpanel" aria-labelledby="tab-nao">
+          <div class="menu-panel-inner">
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Môi Mocktail</p>
+                  <p class="menu-item-desc">Maracujá, hortelã, limão, água com gás e espuma de coco</p>
+                </div>
+                <span class="menu-item-price">R$ 24</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Sunrise Tropical</p>
+                  <p class="menu-item-desc">Manga, abacaxi, gengibre, cúrcuma e suco de laranja fresco</p>
+                </div>
+                <span class="menu-item-price">R$ 22</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Cold Brew com Tônica</p>
+                  <p class="menu-item-desc">Cold brew especial, água tônica artesanal, laranja e canela</p>
+                </div>
+                <span class="menu-item-price">R$ 26</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-info">
+                  <p class="menu-item-name">Limonada Siciliana</p>
+                  <p class="menu-item-desc">Limão siciliano, leite condensado, espuma de baunilha e menta</p>
+                </div>
+                <span class="menu-item-price">R$ 20</span>
+              </div>
+            </div>
+            <div class="menu-img-wrap reveal-right">
+              <img src="assets/menu/drinks-flat.png" alt="Opções sem álcool da Môi" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         GALERIA
+    ═══════════════════════════════════════════════ -->
+    <section id="galeria" aria-labelledby="galeria-titulo">
+      <div class="section-inner">
+
+        <div class="text-center reveal" style="margin-bottom: 0">
+          <span class="section-label">Galeria</span>
+          <h2 id="galeria-titulo" class="section-title">
+            Veja nosso <span>espaço</span>
+          </h2>
+          <div class="gold-line" style="margin: 1rem auto 0;" aria-hidden="true"></div>
+        </div>
+
+        <div class="galeria-grid" role="list" aria-label="Galeria de fotos da Môi">
+
+          <div class="galeria-item reveal delay-1" role="listitem" tabindex="0" aria-label="Foto: Entrada e Lounge VIP">
+            <img src="assets/gallery/gallery-1.png" alt="Lounge VIP sofisticado da Môi" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-2" role="listitem" tabindex="0" aria-label="Foto: Pista de Dança">
+            <img src="assets/gallery/gallery-2.png" alt="Pista de dança e iluminação premium" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-3" role="listitem" tabindex="0" aria-label="Foto: Detalhes do Espaço">
+            <img src="assets/gallery/gallery-3.png" alt="Detalhes decorativos e atmosfera intimista" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-1" role="listitem" tabindex="0" aria-label="Foto: Mesa Reservada">
+            <img src="assets/gallery/gallery-4.png" alt="Mesa de reservas e atendimento exclusivo" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-4" role="listitem" tabindex="0" aria-label="Foto: Bar da Môi">
+            <img src="assets/gallery/gallery-5.png" alt="Bar da Môi com drinks artesanais" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-5" role="listitem" tabindex="0" aria-label="Foto: Palco Principal">
+            <img src="assets/gallery/gallery-6.png" alt="Palco e estrutura de som de última geração" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-1" role="listitem" tabindex="0" aria-label="Foto: Iluminação Especial">
+            <img src="assets/gallery/gallery-7.png" alt="Efeitos de luz e laser show no club" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-2" role="listitem" tabindex="0" aria-label="Foto: Lounge Superior">
+            <img src="assets/gallery/gallery-8.png" alt="Lounge VIP com vista privilegiada" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-3" role="listitem" tabindex="0" aria-label="Foto: Cabine do DJ">
+            <img src="assets/gallery/gallery-9.png" alt="Cabine de som e DJs renomados" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-1" role="listitem" tabindex="0" aria-label="Foto: Drinks Exclusivos">
+            <img src="assets/gallery/gallery-10.png" alt="Drinks e coquetéis premium da Môi" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-4" role="listitem" tabindex="0" aria-label="Foto: Decoração Sofisticada">
+            <img src="assets/gallery/gallery-11.png" alt="Interiores de veludo e acabamentos dourados" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-5" role="listitem" tabindex="0" aria-label="Foto: Noite Especial">
+            <img src="assets/gallery/gallery-12.png" alt="Atmosfera envolvente da boate" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+          <div class="galeria-item reveal delay-2" role="listitem" tabindex="0" aria-label="Foto: Vista Geral do Club">
+            <img src="assets/gallery/gallery-13.png" alt="Visão ampla da Môi Nightclub" loading="lazy" />
+            <div class="galeria-overlay" aria-hidden="true"><span>🔍</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         RESERVAS
+    ═══════════════════════════════════════════════ -->
+    <section id="reservas" aria-labelledby="reservas-titulo">
+      <div class="section-inner">
+        <div class="reservas-grid">
+
+          <!-- Info lateral -->
+          <div class="reservas-info reveal-left">
+            <span class="section-label">Reserve Agora</span>
+            <h2 id="reservas-titulo" class="section-title">
+              Garanta sua<br /><span>mesa</span> hoje
+            </h2>
+            <div class="gold-line" aria-hidden="true"></div>
+
+            <p>
+              Viva a experiência completa da Môi com sua mesa reservada.
+              Atendimento personalizado, drinks na chegada e a melhor
+              localização para curtir o show da noite.
+            </p>
+
+            <div class="reserva-features" role="list">
+              <div class="reserva-feature" role="listitem">
+                <span class="feat-icon" aria-hidden="true">🥂</span>
+                <div class="feat-text">
+                  <strong>Welcome drink incluso</strong>
+                  Drink de boas-vindas para cada convidado
+                </div>
+              </div>
+              <div class="reserva-feature" role="listitem">
+                <span class="feat-icon" aria-hidden="true">⚡</span>
+                <div class="feat-text">
+                  <strong>Acesso prioritário</strong>
+                  Sem fila, entrada VIP garantida
+                </div>
+              </div>
+              <div class="reserva-feature" role="listitem">
+                <span class="feat-icon" aria-hidden="true">📍</span>
+                <div class="feat-text">
+                  <strong>Mesa estratégica</strong>
+                  Melhor posição para o show
+                </div>
+              </div>
+              <div class="reserva-feature" role="listitem">
+                <span class="feat-icon" aria-hidden="true">💬</span>
+                <div class="feat-text">
+                  <strong>Atendimento exclusivo</strong>
+                  Nosso time confirma em até 2h
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário -->
+          <div class="reserva-form reveal-right">
+            <h3 class="form-title">✦ Faça sua Reserva</h3>
+
+            <form id="reserva-form" novalidate aria-label="Formulário de reserva de mesa">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="res-nome">Seu nome *</label>
+                  <input
+                    type="text"
+                    id="res-nome"
+                    name="nome"
+                    placeholder="Nome completo"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="res-tel">WhatsApp *</label>
+                  <input
+                    type="tel"
+                    id="res-tel"
+                    name="telefone"
+                    placeholder="(62) 99999-9999"
+                    required
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="res-data">Data do evento</label>
+                  <input
+                    type="date"
+                    id="res-data"
+                    name="data"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="res-pessoas">Nº de pessoas</label>
+                  <select id="res-pessoas" name="pessoas">
+                    <option value="">Selecione</option>
+                    <option value="2">2 pessoas</option>
+                    <option value="4">3–4 pessoas</option>
+                    <option value="6">5–6 pessoas</option>
+                    <option value="8">7–10 pessoas</option>
+                    <option value="10">10+ pessoas</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="res-evento">Evento de interesse</label>
+                <select id="res-evento" name="evento">
+                  <option value="">Selecione o evento</option>
+                  <option value="moi-nights">Môii Nights — 07/06</option>
+                  <option value="golden-hour">Golden Hour — 14/06</option>
+                  <option value="noite-intima">Noite Íntima — 21/06</option>
+                  <option value="outro">Outro / Data livre</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="res-obs">Observações</label>
+                <textarea
+                  id="res-obs"
+                  name="observacoes"
+                  placeholder="Alguma preferência especial? Aniversário, intolerância alimentar..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-form" id="btn-reservar">
+                Solicitar Reserva ✦
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <!-- Marca -->
+        <div class="footer-brand">
+          <img src="assets/logo/logo-nova.png" alt="Môi Nightclub" class="nav-logo" />
+          <p>
+            Mais do que uma boate — uma experiência.
+            Há 4 anos elevando a noite goianiense com
+            música, gastronomia e momentos únicos.
+          </p>
+          <div class="social-links" aria-label="Redes sociais da Môi">
+            <a href="#" class="social-link" aria-label="Instagram da Môi" id="social-instagram">📸</a>
+            <a href="#" class="social-link" aria-label="TikTok da Môi" id="social-tiktok">🎵</a>
+            <a href="#" class="social-link" aria-label="WhatsApp da Môi" id="social-whatsapp">💬</a>
+            <a href="#" class="social-link" aria-label="Spotify da Môi" id="social-spotify">🎧</a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#oferta">O Que Oferecemos</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#reservas">Reservar Mesa</a></li>
+          </ul>
+        </div>
+
+        <!-- Info -->
+        <div class="footer-col">
+          <h4>Informações</h4>
+          <ul>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Parcerias</a></li>
+            <li><a href="#">Imprensa</a></li>
+          </ul>
+        </div>
+
+        <!-- Endereço & Horários -->
+        <div class="footer-col footer-address">
+          <h4>Localização & Horários</h4>
+          <p>
+            <span class="addr-icon" aria-hidden="true">📍</span>
+            R. T-59, 114 — Lote 12<br />
+            St. Bueno, Goiânia – GO<br />
+            CEP 74223-150
+          </p>
+
+          <div class="footer-hours" aria-label="Horários de funcionamento">
+            <div class="hour-row">
+              <span class="day">Quinta</span>
+              <span class="time">22h – 04h</span>
+            </div>
+            <div class="hour-row">
+              <span class="day">Sexta</span>
+              <span class="time">22h – 05h</span>
+            </div>
+            <div class="hour-row">
+              <span class="day">Sábado</span>
+              <span class="time">22h – 06h</span>
+            </div>
+            <div class="hour-row">
+              <span class="day">Dom – Qua</span>
+              <span class="time">Fechado</span>
+            </div>
+          </div>
+
+          <br />
+          <span class="badge-18" aria-label="Proibido para menores de 18 anos">🔞 Proibido para menores de 18 anos</span>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>© 2025 <span>Môi Nightclub</span>. Todos os direitos reservados.</p>
+        <p>Feito com <span>♥</span> em Goiânia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualizar imagem">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Fechar lightbox">✕</button>
+    <img id="lightbox-img" src="" alt="Imagem ampliada da galeria Môi" />
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
